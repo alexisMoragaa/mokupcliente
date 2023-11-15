@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mokup Bulma!</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+       
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+        <div class="container">
+
+
+
+
+            <div class="card mt-5">
+                <header class="card-header">
+                    <p class="card-header-title">
+                        Perfil de Starbucks S.A
+                    </p>
+                </header>
+                
+
+                <div class="card-content">
+
+                    <div class="columns headers-cliente">
+
+                        <div class="column is-9">
+                            <div class="columns">
+                                <div class="column is-2">
+                                    <img src="https://assets.stickpng.com/images/58428cc1a6515b1e0ad75ab1.png" alt="">
+                                </div>
+                                <div class="column is-5 datos-cliente" >
+                                    <p class="datos-"><span><strong>Nombre:</strong></span> Starbucks S.A</p>
+                                    <p class="datos-"><span><strong>Rut:</strong></span> 77.834.235-5</p>
+                                    <p class="datos-"><span><strong>Estado:</strong></span> Arrendatario Vigente</p>
+                                </div>
+                                <div class="column is-5 datos-cliente" >
+                                    <p class="datos-"><span><strong>Tipo:</strong></span> A</p>
+                                    <p class="datos-"><span><strong>Rubro:</strong></span> Cafetería Restaurant</p>
+                                    <p class="datos-"><span><strong>Semaforo:</strong></span> <button class="button is-success">90/100</button></p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="column is-3 botones p-4">
+                            <button type="button" class="button is-primary mt-2 ">Base XLS</button>
+                            <button type="button" class="button is-link mt-2 ">Imprimir</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="tabs-wrapper columns mt-5">
+                        <div class="tabs column is-1 navs-icons">
+                            <ul>
+                                <li data-target="pictures" class="is-active"><a><i class="fa fa-list" aria-hidden="true"></i></a></li>
+                                <li data-target="music"><a><i class="fa fa-file-text" aria-hidden="true"></i></a></li>
+                                <li data-target="videos"><a><i class="fa fa-users" aria-hidden="true"></i></a></li>
+                                <li data-target="documents"><a><i class="fa fa-credit-card" aria-hidden="true"></i> </a></li>
+                            </ul>
+                        </div>
+
+                        <div class="content-wrap column is-11 ">
+                            <div id="pictures" class="tab-content is-active">
+                                <div class="columns">
+                                    <div class="column is-5">
+                                        <div class="" id="chart1"></div>
+                                    </div>
+                                    <div class="column is-7">
+                                        <div class="" id="chart2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="music" class="tab-content">
+                 
+
+                                <div class="table-container">
+                                    <table class="table is-striped is-fullwidth">
+                                        <thead>
+                                            <tr>
+                                                <th>ID Contrato</th>
+                                                <th>Centro de Beneficio</th>
+                                                <th>M2</th>
+                                                <th>Canon UF</th>
+                                                <th>Fecha Inicio</th>
+                                                <th>Fecha Término</th>
+                                                <th>Plazo</th>
+                                                <th>Aviso</th>
+                                                <th>Fecha Aviso</th>
+                                                <th>Prórroga</th>
+                                                <th>Cant. Renovaciones</th>
+                                                <th>Cant. Retenciones</th>
+                                            </tr>
+                                        </thead>
+                            
+                                        <tbody>
+                                            <tr>
+                                                <td>0002</td>
+                                                <td>Ed. Nau</td>
+                                                <td>104 m²</td>
+                                                <td>50 UF</td>
+                                                <td>06-06-2019</td>
+                                                <td>31-06-2023</td>
+                                                <td>4 años</td>
+                                                <td>60 días</td>
+                                                <td>31-04-2023</td>
+                                                <td>12 meses</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr  class="is-selected">
+                                                <td>0045</td>
+                                                <td>Strip Puente Alto</td>
+                                                <td>150 m²</td>
+                                                <td>89 UF</td>
+                                                <td>01-01-2014</td>
+                                                <td>31-12-2025</td>
+                                                <td>11 años</td>
+                                                <td>90 días</td>
+                                                <td>31-09-2025</td>
+                                                <td>36 meses</td>
+                                                <td>2</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr >
+                                                <td>0003</td>
+                                                <td>Centro Gastronómico Bellavista</td>
+                                                <td>203 m²</td>
+                                                <td>120 UF</td>
+                                                <td>01-01-2022</td>
+                                                <td>31-12-2029</td>
+                                                <td>7 años</td>
+                                                <td>90 días</td>
+                                                <td>31-09-2029</td>
+                                                <td>24 meses</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                                  
+
+                            </div>
+                            <div id="videos" class="tab-content">
+                                <div class="columns">
+                                    <div class="column is-4">
+                                        <div class="notification is-primary">
+                                            <button class="delete"></button>
+                                            Ejemplo de alerta primary <br>
+                                            adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur.
+                                        </div>
+                                    </div>
+                                    <div class="column is-4">
+                                        <div class="notification is-warning">
+                                            <button class="delete"></button>
+                                            Ejemplo de alerta warning<br>
+                                            adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur.
+                                        </div>
+                                    </div>
+                                    <div class="column is-4">
+                                        <div class="notification is-danger">
+                                            <button class="delete"></button>
+                                            Ejemplo de alerta danger<br>
+                                            adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="columns">
+                                    <div class="column is-7">
+
+                                        <article class="message is-primary">
+                                            <div class="message-header">
+                                                <p>Ejemplo de componente Message</p>
+                                                <button class="delete" aria-label="delete"></button>
+                                            </div>
+                                            <div class="message-body">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+                                            </div>
+                                        </article>
+
+
+                                      
+                                    </div>
+                                    <div class="column is-5">
+                                        
+                                        <div class="notification is-danger is-light">
+                                            <button class="delete"></button>
+                                            Ejemplo de alerta danger light<br>
+                                            adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="documents" class="tab-content">
+
+                                <div class="columns">
+                                    <div class="column is-5 p-3">
+                                        <table class="table is-fullwidth is-striped is-hoverable">
+                                            <thead>
+                                                <tr>
+                                                    <th>Cebe</th>
+                                                    <th>2023 Canon UF</th>
+                                                    <th>2022 Canon UF</th>
+                                                    <th>2023 Porcentual</th>
+                                                    <th>2022 Porcentual</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Strip Iquique</td>
+                                                    <td>100 UF</td>
+                                                    <td>100 UF</td>
+                                                    <td>15 UF</td>
+                                                    <td>13,5 UF</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ed. Nau</td>
+                                                    <td>160 UF</td>
+                                                    <td>150 UF</td>
+                                                    <td>--</td>
+                                                    <td>--</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Terrazas San Cristobal</td>
+                                                    <td>90 UF</td>
+                                                    <td>90 UF</td>
+                                                    <td>9 UF</td>
+                                                    <td>0 UF</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="column is-7 p-3" >
+                                        <div class="" id="chart3"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+    
+
+
+                </div>
+                
+            </div>
+
+        </div>
+
+    <style>
+        .botones{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .datos-cliente{
+            font-size: 1.3em;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+
+
+        /* .table{
+            width: 100%;;
+        } */
+        .navs-icons{
+            display: flex;
+            align-items: center;
+        }
+        .tabs-wrapper{
+            min-height: 25vh;
+        }
+        .tabs ul {
+            display: block;
+            text-align: left;
+            border-bottom-color: transparent !important;
+        }
+        .tabs ul li {
+            display: block;
+           ;
+        }
+        .tabs ul li.is-active a {
+            border-right-color: #00c4a7;
+        }
+        .tabs ul li a {
+            display: block;
+            border-bottom-color: transparent !important;
+            border-right: 2px solid #dbdbdb;
+            font-size: 1.2em;
+            transition: all ease .3s
+        }
+
+        .content-wrap .tab-content {
+            padding-top: 12px;
+            display: none;
+            animation: fadeInLeft 0.5s;
+        }
+        .content-wrap .tab-content.is-active {
+            display: block;
+        }
+
+        @-webkit-keyframes fadeInLeft {
+            from {
+                -webkit-transform: translate3d(20px, 0, 0);
+                transform: translate3d(20px, 0, 0);
+                opacity: 0;
+            }
+            to {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInLeft {
+            from {
+                -webkit-transform: translate3d(20px, 0, 0);
+                transform: translate3d(20px, 0, 0);
+                opacity: 0;
+            }
+            to {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+                opacity: 1;
+            }
+        }
+        .fadeInLeft {
+            opacity: 0;
+            -webkit-animation-name: fadeInLeft;
+            animation-name: fadeInLeft;
+        }
+
+        .tabs li.is-active a {
+            border-bottom-color: #00c4a7;
+            color: #00c4a7;
+            /* transform: scale(1.2); */
+            font-size: 1.7em;
+        }
+    </style>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+        $('.tabs ul li').on('click', function() {
+        var target = $(this).attr('data-target');   $(this).siblings('li').removeClass('is-active');
+            $(this).addClass('is-active');
+            $('.tab-content').removeClass('is-active');
+            $('#' + target).addClass('is-active');
+        })
+        })
+    </script>
+
+
+    <script>
+            
+        var options = {
+            series: [{
+            name: 'TEAM A',
+            type: 'column',
+            data: [23, 11, 22, 27, 13, 22, 37, 21, 44, 22, 30]
+        }, {
+            name: 'TEAM B',
+            type: 'area',
+            data: [44, 55, 41, 67, 22, 43, 21, 41, 56, 27, 43]
+        }, {
+            name: 'TEAM C',
+            type: 'line',
+            data: [30, 25, 36, 30, 45, 35, 64, 52, 59, 36, 39]
+        }],
+            chart: {
+            height: 350,
+            type: 'line',
+            stacked: false,
+        },
+        stroke: {
+            width: [0, 2, 5],
+            curve: 'smooth'
+        },
+        plotOptions: {
+            bar: {
+            columnWidth: '50%'
+            }
+        },
+        
+        fill: {
+            opacity: [0.85, 0.25, 1],
+            gradient: {
+            inverseColors: false,
+            shade: 'light',
+            type: "vertical",
+            opacityFrom: 0.85,
+            opacityTo: 0.55,
+            stops: [0, 100, 100, 100]
+            }
+        },
+        labels: ['01/01/2003', '02/01/2003', '03/01/2003', '04/01/2003', '05/01/2003', '06/01/2003', '07/01/2003',
+            '08/01/2003', '09/01/2003', '10/01/2003', '11/01/2003'
+        ],
+        markers: {
+            size: 0
+        },
+        xaxis: {
+            type: 'datetime'
+        },
+        yaxis: {
+            title: {
+            text: '',
+            },
+            min: 0
+        },
+        tooltip: {
+            shared: true,
+            intersect: false,
+            y: {
+            formatter: function (y) {
+                if (typeof y !== "undefined") {
+                return y.toFixed(0) + " points";
+                }
+                return y;
+        
+            }
+            }
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart2"), options);
+        chart.render();
+      
+
+
+
+        var options = {
+          series: [14, 23, 21, 17, 15, 10, 12, 17, 21],
+          chart: {
+          type: 'polarArea',
+        },
+        stroke: {
+          colors: ['#fff']
+        },
+        fill: {
+          opacity: 0.8
+        },
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            chart: {
+              width: 200
+            },
+            legend: {
+              position: 'bottom'
+            }
+          }
+        }]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart1"), options);
+        chart.render();
+      
+
+
+
+        
+        var options = {
+          series: [{
+          name: 'Cash Flow',
+          data: [1.45, 5.42, 5.9, -0.42, -12.6, -18.1, -18.2, -14.16, -11.1, -6.09, 0.34, 3.88, 13.07,
+            5.8, 2, 7.37, 8.1, 13.57, 15.75, 17.1, 19.8, -27.03, -24.4, -27.2, -23.3, -13.6, -
+            -3.6, 2.1, 4.6, 12.6, -1.4, -4.4, -9.4
+          ]
+        }],
+          chart: {
+          type: 'bar',
+          height: 350
+        },
+        plotOptions: {
+          bar: {
+            colors: {
+              ranges: [{
+                from: -100,
+                to: -46,
+                color: '#F15B46'
+              }, {
+                from: -45,
+                to: 0,
+                color: '#FEB019'
+              }]
+            },
+            columnWidth: '80%',
+          }
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        yaxis: {
+          title: {
+            text: 'Growth',
+          },
+          labels: {
+            formatter: function (y) {
+              return y.toFixed(0) + "%";
+            }
+          }
+        },
+        xaxis: {
+          type: 'datetime',
+          categories: [
+            '2011-01-01', '2011-02-01', '2011-03-01', '2011-04-01', '2011-05-01', '2011-06-01',
+            '2011-07-01', '2011-08-01', '2011-09-01', '2011-10-01', '2011-11-01', '2011-12-01',
+            '2012-01-01', '2012-02-01', '2012-03-01', '2012-04-01', '2012-05-01', '2012-06-01',
+            '2012-07-01', '2012-08-01', '2012-09-01', '2012-10-01', '2012-11-01', '2012-12-01',
+            '2013-01-01', '2013-02-01', '2013-03-01', '2013-04-01', '2013-05-01', '2013-06-01',
+            '2013-07-01', '2013-08-01', '2013-09-01'
+          ],
+          labels: {
+            rotate: -90
+          }
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart3"), options);
+        chart.render();
+      
+    </script>
+
+
+    </body>
+</html>
