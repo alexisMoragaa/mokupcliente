@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Mokup Bulma!</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-       
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link href="DataTables/dataTables.min.css" rel="stylesheet">
     </head>
     <body>
         
@@ -61,6 +61,8 @@
                                 <li data-target="music"><a><i class="fa fa-file-text" aria-hidden="true"></i></a></li>
                                 <li data-target="videos"><a><i class="fa fa-users" aria-hidden="true"></i></a></li>
                                 <li data-target="documents"><a><i class="fa fa-credit-card" aria-hidden="true"></i> </a></li>
+                                <li data-target="datatable"><a>  <i class="fa fa-table" aria-hidden="true"></i> </a></li>
+                            
                             </ul>
                         </div>
 
@@ -75,9 +77,9 @@
                                     </div>
                                 </div>
                             </div>
+                        
                             <div id="music" class="tab-content">
-                 
-
+                
                                 <div class="table-container">
                                     <table class="table is-striped is-fullwidth">
                                         <thead>
@@ -144,7 +146,6 @@
                                 </table>
                             </div>
 
-                                  
 
                             </div>
                             <div id="videos" class="tab-content">
@@ -243,6 +244,34 @@
                                 </div>
 
                             </div>
+                            
+                            <div class="tab-content" id="datatable">
+                                
+                                <table id="data_table" class="table is-striped" style="width: 100%;" >
+                                    <!-- <thead>
+                                        <tr>
+                                            <th>ID Contrato</th>
+                                            <th>Centro de Beneficio</th>
+                                            <th>M2</th>
+                                            <th>Canon UF</th>
+                                            <th>Fecha Inicio</th>
+                                            <th>Fecha Término</th>
+                                            <th>Plazo</th>
+                                            <th>Aviso</th>
+                                            <th>Fecha Aviso</th>
+                                            <th>Prórroga</th>
+                                            <th>Cant Renovaciones</th>
+                                            <th>Cant Retenciones</th>
+                                            <th>Acciones</th> 
+                                        </tr>
+                                    </thead> -->
+                                    
+                                    
+                                </table>
+
+                            </div>
+
+
                         </div>
                     </div>
     
@@ -253,8 +282,11 @@
             </div>
 
         </div>
-
     <style>
+        .dataTables_scrollHeadInner,table.table.is-striped.dataTable.no-footer  {
+            width: 100%!important;
+        }
+        
         .botones{
             display: flex;
             justify-content: space-between;
@@ -347,10 +379,131 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script
-    src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+    <script src="DataTables/datatables.min.js"></script>
+
+    <script>
+
+$(document).ready(function() {
+        let dataSet = [
+            {
+                "ID Contrato": "0002",
+                "Centro_de_Beneficio": "Ed. Nau 1",
+                "M2": "104 m²",
+                "Canon UF": "50 UF",
+                "Fecha Inicio": "06-06-2019",
+                "Fecha Término": "31-06-2023",
+                "Plazo": "4 años",
+                "Aviso": "60 días",
+                "Fecha Aviso": "31-04-2023",
+                "Prórroga": "12 meses",
+                
+            },
+            {
+                "ID Contrato": "0005",
+                "Centro_de_Beneficio": "Strip Puente Alto",
+                "M2": "150 m²",
+                "Canon UF": "89 UF",
+                "Fecha Inicio": "01-01-2014",
+                "Fecha Término": "31-12-2025",
+                "Plazo": "11 años",
+                "Aviso": "90 días",
+                "Fecha Aviso": "31-09-2025",
+                "Prórroga": "36 meses",
+                
+            },
+            {
+                "ID Contrato": "0003",
+                "Centro_de_Beneficio": "Centro Gastronómico Bellavista",
+                "M2": "203 m²",
+                "Canon UF": "120 UF",
+                "Fecha Inicio": "01-01-2022",
+                "Fecha Término": "31-12-2029",
+                "Plazo": "7 años",
+                "Aviso": "90 días",
+                "Fecha Aviso": "31-09-2029",
+                "Prórroga": "24 meses",
+                
+            },
+            {
+                "ID Contrato": "0002",
+                "Centro_de_Beneficio": "Ed. Nau",
+                "M2": "104 m²",
+                "Canon UF": "50 UF",
+                "Fecha Inicio": "06-06-2019",
+                "Fecha Término": "31-06-2023",
+                "Plazo": "4 años",
+                "Aviso": "60 días",
+                "Fecha Aviso": "31-04-2023",
+                "Prórroga": "12 meses",
+              
+            },
+        ];
+
+        let table = new DataTable('#data_table', {
+            data: dataSet,
+            scrollX: true,
+            // autoWidth: true,
+            width: '100%',
+            columns: [
+                {
+                    className: 'dt-control',
+                    orderable: false,
+                    data: null,
+                    defaultContent: ''
+                },
+                {title: 'ID Contrato', data: 'ID Contrato' },
+                {title: 'Centro de Beneficio',  data: 'Centro_de_Beneficio' },
+                {title: 'M2',  data: 'M2' },
+                {title: 'Canon UF', data: 'Canon UF' },
+                {title: 'Fecha Inicio', data: 'Fecha Inicio' },
+                {title: 'Fecha Término', data: 'Fecha Término' },
+                {title: 'Plazo',  data: 'Plazo' },
+                {title: 'Aviso',  data: 'Aviso' },
+                {title: 'Fecha Aviso', data: 'Fecha Aviso' },
+                {title: 'Prórroga',  data: 'Prórroga' },
+                
+                {   title:"Acciones",
+                    data: null,
+                    className: "center",
+                    defaultContent: '<span class="icon"> <a href=""> <i class="fa fa-eye" aria-hidden="true"></i> </a></span>' +
+                                    '<span class="icon">  <a href=""> <i class="fa fa-pencil" aria-hidden="true"></i> </a> </span>'
+                }
+            ],
+            // order: [[1, 'asc']]
+        });
+        
+
+         // Formatting function for row details - modify as you need
+         function format(d) {
+            // `d` is the original data object for the row
+            return (
+                '<dl>' +
+                '<dt>Centro: <b>'+ d.Centro_de_Beneficio +'</b></dt>' +
+         
+                " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas officiis voluptatem necessitatibus assumenda laudantium consequuntur deserunt animi numquam cumque perspiciatis unde vitae non, magnam illo dolores neque fugit doloribus voluptates."+
+                
+                '</dl>'
+            );
+        }
+
+        // Add event listener for opening and closing details
+        table.on('click', 'td.dt-control', function (e) {
+            let tr = e.target.closest('tr');
+            let row = table.row(tr);
+        
+            if (row.child.isShown()) {
+                // This row is already open - close it
+                row.child.hide();
+            }
+            else {
+                // Open this row
+                row.child(format(row.data())).show();
+            }
+        });
+    });
+    </script>
+
 
     <script>
         $(document).ready(function(){
