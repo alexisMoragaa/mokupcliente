@@ -9,7 +9,29 @@
   </head>
   <body>
     
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+
+         <a class="navbar-brand" href="#">
+          <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="" style="height: 45px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html">Bootsrap 5</a>
+            <a class="nav-link" href="bulma.html">Bulma</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+   
+
     <div class="container  p-3">
+
+
       <div class="card ">
   
           <div class="card-header">
@@ -32,10 +54,10 @@
             
             <div class="d-flex align-items-start">
               <div class="nav flex-column nav-pills me-3 col col-xs-12 col-lg-1 navv" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <button data-bs-placement="right" title="Resumen"  class="nav-link active tooltip-trigger" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" ><i class="fa fa-list" aria-hidden="true"></i></button>
-                <button data-bs-placement="right" title="Contratos"  class="nav-link tooltip-trigger" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fa fa-file-text" aria-hidden="true"></i></button>
-                <button data-bs-placement="right" title="Comportamientos"  class="nav-link tooltip-trigger"  id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" > <i class="fa fa-users" aria-hidden="true"></i> </button>
-                <button data-bs-placement="right" title="Facturación"  class="nav-link tooltip-trigger" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"> <i class="fa fa-credit-card" aria-hidden="true"></i> </button>
+                <button data-bs-placement="right" title="Resumen"  class="nav-link n-link active tooltip-trigger" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" ><i class="fa fa-list" aria-hidden="true"></i></button>
+                <button data-bs-placement="right" title="Contratos"  class="nav-link n-link tooltip-trigger" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fa fa-file-text" aria-hidden="true"></i></button>
+                <button data-bs-placement="right" title="Comportamientos"  class="nav-link n-link tooltip-trigger"  id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" > <i class="fa fa-users" aria-hidden="true"></i> </button>
+                <button data-bs-placement="right" title="Facturación"  class="nav-link n-link tooltip-trigger" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"> <i class="fa fa-credit-card" aria-hidden="true"></i> </button>
               </div>
               <div class="tab-content  col-xs-12 col-lg-11 " id="v-pills-tabContent  border">
                 <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
@@ -76,12 +98,12 @@
         justify-content: space-between;
         align-items: flex-start;
       }
-      .nav-link{
+      .n-link{
         color:#666769;
         font-size: 1.4em;
         transition: all ease .2s;
       }
-      .nav-link:not(.active):hover {
+      .n-link:not(.active):hover {
           color: #000;
           font-size: 1.5em;
         }
@@ -92,7 +114,7 @@
       .card .card-header {
           padding: 1rem 1.5rem;
       }
-      .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+      .nav-pills .n-link.active, .nav-pills .show>.n-link {
           color: #fff;
           background-color: #28a745;
           border-color: #28a745;
