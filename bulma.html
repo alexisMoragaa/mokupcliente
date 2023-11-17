@@ -478,12 +478,47 @@ $(document).ready(function() {
          function format(d) {
             // `d` is the original data object for the row
             return (
-                '<dl>' +
-                '<dt>Centro: <b>'+ d.Centro_de_Beneficio +'</b></dt>' +
+
+            ` <table class="table is-fullwidth is-striped is-hoverable">
+                                            <thead>
+                                                <tr>
+                                                    <th>Cebe</th>
+                                                    <th>2023 Canon UF</th>
+                                                    <th>2022 Canon UF</th>
+                                                    <th>2023 Porcentual</th>
+                                                    <th>2022 Porcentual</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Strip Iquique</td>
+                                                    <td>100 UF</td>
+                                                    <td>100 UF</td>
+                                                    <td>15 UF</td>
+                                                    <td>13,5 UF</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ed. Nau</td>
+                                                    <td>160 UF</td>
+                                                    <td>150 UF</td>
+                                                    <td>--</td>
+                                                    <td>--</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Terrazas San Cristobal</td>
+                                                    <td>90 UF</td>
+                                                    <td>90 UF</td>
+                                                    <td>9 UF</td>
+                                                    <td>0 UF</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>`
+                // '<dl>' +
+                // '<dt>Centro: <b>'+ d.Centro_de_Beneficio +'</b></dt>' +
          
-                " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas officiis voluptatem necessitatibus assumenda laudantium consequuntur deserunt animi numquam cumque perspiciatis unde vitae non, magnam illo dolores neque fugit doloribus voluptates."+
+                // " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas officiis voluptatem necessitatibus assumenda laudantium consequuntur deserunt animi numquam cumque perspiciatis unde vitae non, magnam illo dolores neque fugit doloribus voluptates."+
                 
-                '</dl>'
+                // '</dl>'
             );
         }
 
